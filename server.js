@@ -14,7 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
+const gateway = "https://<ENTER-YOUR-GATEWAY-DOMAIN>/ipfs";
 //Takes student name, date of birth, and phone number, creates an identity metadata JSON, and uploads it to IPFS via Pinata.
 app.post('/upload-to-ipfs', async (req, res) => {
   try {
@@ -48,7 +48,7 @@ app.post('/upload-to-ipfs', async (req, res) => {
     );
 
     //The url returned from pinata of the stored data.
-    const ipfsURL = `https://teal-managing-gull-42.mypinata.cloud/ipfs/${response.data.IpfsHash}`;
+    const ipfsURL = `${gateway}/${response.data.IpfsHash}`;
     res.json({ ipfsURL });
   } catch (err) {
     console.error(err);
@@ -107,7 +107,7 @@ app.post('/upload-certificate', async (req, res) => {
       );
   
        //The url returned from pinata of the stored data.
-      const ipfsURL = `https://teal-managing-gull-42.mypinata.cloud/ipfs/${response.data.IpfsHash}`;
+      const ipfsURL = `${gateway}/${response.data.IpfsHash}`;
       res.json({ ipfsURL });
     } catch (err) {
       console.error("Certificate upload failed", err);
@@ -164,7 +164,7 @@ app.listen(PORT, () => {
       );
   
        //The url returned from pinata of the stored data.
-      const ipfsURL = `https://teal-managing-gull-42.mypinata.cloud/ipfs/${response.data.IpfsHash}`;
+      const ipfsURL = `${gateway}/${response.data.IpfsHash}`;
       res.json({ ipfsURL });
     } catch (err) {
       console.error("Semester fee upload failed", err);
