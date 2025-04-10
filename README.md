@@ -95,14 +95,14 @@ This is a decentralized application (DApp) built with NFT's that allows students
 
 2. **Setting up the contract Addresses and ABI's**
    - After deploying we will get a folder named **build** in our project folder.
-   - Open the ```build/Id_card_NFT.json``` file copy the abi of the contract.
+   - Open the ```build/contracts/Id_card_NFT.json``` file copy the abi of the contract.
    - Now paste this abi as the value of ```Id_contr_ABI``` in ```login.js``` and value of ```Id_contr_ABI ``` in ```scripts/admin.js```.
    - After deploying we will get the details of deployment on our terminal.
    - Copy the contract address of ```Id_card_NFT.sol``` and paste it as the value of  ```Id_contr_addr``` in ```login.js``` and value of ```Id_contr_addr ``` in ```scripts/admin.js```.
-   - Open the ```build/Certificate_NFT.json``` file copy the abi of the contract.
+   - Open the ```build/contracts/Certificate_NFT.json``` file copy the abi of the contract.
    - Now paste this abi as the value of ```CERT_contr_ABI``` in ```scripts/user.js``` and value of ```CERT_contr_ABI ``` in ```scripts/admin.js```.
    - Copy the contract address of ```Certificate_NFT.sol``` and paste it as the value of  ```CERT_contr_addr``` in ```scripts/user.js``` and value of ```CERT_contr_addr ``` in ```scripts/admin.js```.
-   - Open the ```build/Fee_payment_NFT.json``` file copy the abi of the contract.
+   - Open the ```build/contracts/Fee_payment_NFT.json``` file copy the abi of the contract.
    - Now paste this abi as the value of ```contractAddress``` in ```scripts/feepay.js```.
    - Copy the contract address of ```Fee_payment_NFT.sol``` and paste it as the value of  ```contractABI``` in ```scripts/feepay.js```.
   
@@ -164,7 +164,8 @@ This is a decentralized application (DApp) built with NFT's that allows students
 ├── test/ 
 │   └── test cases 
 ├── build/ # You will get this after running truffle compile --all / truffle migrate 
-│   └── yourfile.json 
+│   └── contracts/
+|        └── yourfile.json  
 ├── pages/ 
 │   ├── admin.html
 │   ├── cou_reg.html
