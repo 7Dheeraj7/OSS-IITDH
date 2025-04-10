@@ -101,7 +101,7 @@ async function mintForUser() {
 
 
 const CERT_contr_addr = "Your Certificate_NFT Address";
-const CERT_contr_ABI = ["Your ID_card_NFT ABI"];
+const CERT_contr_ABI = ["Your Certificate_NFT ABI"];
 
 // Mint function for minting the Certificate NFT
 async function mintCertificate() {
