@@ -76,8 +76,9 @@ This is a decentralized application (DApp) built with NFT's that allows students
    - Now run the following commands
     ```
     mv OSS-IITDH/* .
-    mv OSS-IITDH/contracts/* contracts/
-    mv OSS-IITDH/migrations/* migrations/
+    if contracts and migrations didn't move to the contracts and migrations folders (ls contracts/ is empty) in our project folder then:
+    {mv OSS-IITDH/contracts/* contracts/
+    mv OSS-IITDH/migrations/* migrations/}
     rm -r OSS-IITDH
     npm install
      ```
