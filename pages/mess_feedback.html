@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mess Menu & Feedback</title>
+   <link rel="stylesheet" href="../all.css">
+   <style>
+     body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .tabs button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #eee;
+    border: none;
+    color: black;
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  .tabs button.active {
+    background-color: #007BFF;
+    color: white;
+  }
+  .tab-content {
+    display: none;
+  }
+  .tab-content.active {
+    display: block;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  textarea {
+    width: 100%;
+    height: 80px;
+  }
+   </style>
+</head>
+<body>
+  <div class="page-container">
+
+  <h1>Mess Menu & Feedback</h1>
+
+  <div class="tabs">
+    <button class="tab-link active" onclick="openTab('menu')">Mess Menu</button>
+    <button class="tab-link" onclick="openTab('feedback')">Feedback</button>
+  </div>
+
+  <div id="menu" class="tab-content active">
+    <table>
+      <thead>
+        <tr><th>Day</th><th>Breakfast</th><th>Lunch</th><th>Dinner</th></tr>
+      </thead>
+      <tbody id="menuTable"></tbody>
+    </table>
+  </div>
+
+  <div id="feedback" class="tab-content">
+    <h3>Submit Feedback</h3>
+    <label for="meal">Select Meal:</label>
+    <select id="meal">
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+    </select><br><br>
+    
+    <label for="feedbackText">Your Feedback:</label><br>
+    <textarea id="feedbackText" placeholder="Write your feedback here..."></textarea><br>
+    
+    <button class="submit-btn" onclick="submitFeedback()">Submit Feedback</button>
+  </div>
+</div>
+
+  <script src="../scripts/mess_feedback.js"></script>
+</body>
+</html>

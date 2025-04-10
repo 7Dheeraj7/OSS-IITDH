@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OSS@IITDH</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e8edff;
+    }
+
+    .topbar {
+      background-color: #7e1fa4;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .text-center{
+	color:#fff;	
+	text-transform:uppercase;
+    font-size: 23px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+
+
+   
+  </style>
+  <link rel="stylesheet" href="all.css">
+  <link rel="icon" href="/images/WebIcon.plain.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="topbar">Login Using Identity NFT</div>
+  <div class="page-container">
+ 
+    <form>
+      
+    <div class="input-container">
+      <input type="text" id="tokenId" placeholder="Enter Identity NFT Token ID" />
+    </div>
+    <button type="button" class="btn" onclick="verifyIdentityNFT()">Login</button>
+    </div>
+     
+  
+ 
+ 
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+  <script defer src="login.js"></script>
+  
+</body>
+</html>

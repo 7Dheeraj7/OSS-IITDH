@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COURSE_REGS</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+  <link rel="stylesheet" href="../all.css">
+
+
+  
+<script defer src="../scripts/course_regs.js"></script>
+</head>
+<body>
+  <div class="page-container">
+    
+  <div id="profile">
+    <h3>Student Profile</h3>
+    <p><strong>Name:</strong> <span id="profileName"></span></p>
+    <p><strong>Date of Birth:</strong> <span id="profiledob"></span></p>
+    <p><strong>Phone:</strong> <span id="profilephone"></span></p>
+    <p><strong>Wallet:</strong> <span id="profileWallet"></span></p>
+  </div>
+  <hr>
+  <h2>Course Registration</h2>
+  
+
+  <h3>Available Courses</h3>
+  <div id="courseList"></div>
+  <button onclick="registerCourses()">Register</button>
+
+
+
+  <button onclick="showRegisteredCourses()">Show Registered Courses</button>
+  <div id="registeredCourses"></div>
+
+</div>
+</body>
+</html>
+
+

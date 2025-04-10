@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Work Request Form</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #eef1fb;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+   
+  </style>
+     <link rel="stylesheet" href="../all.css">
+</head>
+<body>
+    <div class="page-container">
+  <div class="container">
+    <h2>Work Request Form</h2>
+
+    <label>Student Roll No:</label>
+    <input type="text" id="rollNo" placeholder="e.g., CS22BT009" />
+
+    <label>Category:</label>
+    <select id="category">
+      <option value="">-- Select Category --</option>
+      <option value="Plumbing">Plumbing</option>
+      <option value="Electrical">Electrical</option>
+      <option value="Internet">Internet</option>
+      <option value="Furniture">Furniture</option>
+    </select>
+
+    <label>Issue Description:</label>
+    <textarea id="description" maxlength="500" placeholder="Describe the issue (max 500 characters)..."></textarea>
+
+    <label>Building:</label>
+    <input type="text" id="building" placeholder="e.g., Hostel 1 - Wing E" />
+
+    <label>Room No:</label>
+    <input type="text" id="roomNo" placeholder="e.g., 121" />
+
+    <label>Floor No:</label>
+    <input type="number" id="floorNo" min="0" placeholder="e.g., 1" />
+
+    <label>Preferred Date:</label>
+    <input type="date" id="preferredDate" />
+
+    <label>Preferred Time:</label>
+    <select id="preferredTime">
+      <option value="">-- Select Time Slot --</option>
+      <option value="Morning">Morning</option>
+      <option value="Afternoon">Afternoon</option>
+      <option value="Evening">Evening</option>
+    </select>
+
+    <button onclick="submitRequest()">Submit Request</button>
+  </div>
+</div>
+<script src="../scripts/work.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OSS@IITDH-USER</title>
+  <link rel="icon" href="/images/WebIcon.plain.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="topbar">HOME
+    <button class="logout-button" onclick="logout()">Logout</button>
+  </div>
+
+  <div class="card-container">
+    <div class="card" onclick="loadPage('/pages/cou_reg.html')">Course Registration</div>
+    <div class="card" onclick="loadPage('/pages/user.html')">Certificate Verification</div>
+    <div class="card" onclick="loadPage('/pages/feepay.html')">Fee Payment</div>
+    <div class="card" onclick="loadPage('/pages/mess_feedback.html')">Mess Menu & Feedback</div>
+    <div class="card" onclick="loadPage('/pages/work.html')">Submit Work Requests</div>
+  </div>
+
+  <iframe id="pageFrame"></iframe>
+
+  <script defer src="index.js"></script>
+</body>
+</html>
