@@ -46,13 +46,13 @@ This is a decentralized application (DApp) built with NFT's that allows students
 
 3. **Connect Ganache Account**  
    - Launch **Ganache** and copy one of the account **private keys**.
-   - In MetaMask, go to your profile icon → **"Import Account"**.
-   - Paste the private key from Ganache and click **Import**.
-   - Import multiple accounts from the ganache in the same manner(will be useful when testing the DAPP). 
+   - In MetaMask, go to your profile icon → **"Add account or Hardware Wallet"**.
+   - Paste the private key from Ganache and click **Private Key/Import Account**.
+   - (You can do it later) Import multiple accounts from the ganache in the same manner(will be useful when testing the DAPP). 
    - You should now see the Ganache account in MetaMask.
 
 4. **Add Ganache Local Blockchain Network**  
-   - In MetaMask, go to **Settings → Networks → Add a network manually**.
+   - In MetaMask, go to **Networks(at left-top,Ethereum mainnet will be as default) → Add a network manually**.
    - Use the following values:
      ```
      Network Name: Ganache
@@ -61,6 +61,29 @@ This is a decentralized application (DApp) built with NFT's that allows students
      Currency Symbol: ETH
      ```
    - Save and switch to the newly added **Ganache** network.
+  
+-  **Step 2: Install Truffle & Setting Up the project directory**
+
+1. **Create a folder with name of your choice**  
+   - ```mkdir <folder name>``` for ubuntu.
+   - Go inside the folder with ```cd <folder name>``` .
+
+2. **Installing and Initialising truffle**  
+   -  Make sure you have Node.js v22.14.0 and npm v10.9.2 installed. Then run:
+      ```npm install -g truffle ```( **Ignore the warnings** )
+   - Clone this git repo into the folder with ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git```
+   - Now you will get a folder with name OSS-IITDH in this folder.
+   - Now run the following commands
+    ```
+    mv OSS-IITDH/* .
+    mv OSS-IITDH/contracts/* contracts/
+    mv OSS-IITDH/migrations/* migrations/
+    rm -r OSS-IITDH
+     ```
+3. 
+
+
+
 
 
 ---
