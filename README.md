@@ -110,24 +110,22 @@ This is a decentralized application (DApp) built with NFT's that allows students
 
     
 1. **Setting up PINATA**
-   - Open [https://pinata.cloud/](https:/pinata.cloud/)
-   - Configure the networks section to your local host and the port as seen in ganache.
-   - Configure the compiler verison to 0.8.19.
-   - Now compile the contracts using ```truffle compile```
-   - After compilation deploy the contracts using ```truffle deploy```
+   - Open [Pinata](https://pinata.cloud/) and sign in or create an account.
+   - Now you have your IPFS database interface to interact with it.
+   - Open **API KEYS** section in **Developer** Section in **PINATA**.
+   - Click New Key and enter any name and select **Admin** and click generate API key.
+   - Copy the **API KEY** and **API SECRET KEY**.
 
-2. **Setting up the contract Addresses and ABI's**
-   - After deploying we will get a folder named **build** in our project folder.
-   - Open the ```build/Id_card_NFT.json``` file copy the abi of the contract.
-   - Now paste this abi as the value of ```Id_contr_ABI``` in ```login.js``` and value of ```Id_contr_ABI ``` in ```scripts/admin.js```.
-   - After deploying we will get the details of deployment on our terminal.
-   - Copy the contract address of ```Id_card_NFT.sol``` and paste it as the value of  ```Id_contr_addr``` in ```login.js``` and value of ```Id_contr_addr ``` in ```scripts/admin.js```.
-   - Open the ```build/Certificate_NFT.json``` file copy the abi of the contract.
-   - Now paste this abi as the value of ```CERT_contr_ABI``` in ```scripts/user.js``` and value of ```CERT_contr_ABI ``` in ```scripts/admin.js```.
-   - Copy the contract address of ```Certificate_NFT.sol``` and paste it as the value of  ```CERT_contr_addr``` in ```scripts/user.js``` and value of ```CERT_contr_addr ``` in ```scripts/admin.js```.
-   - Open the ```build/Fee_payment_NFT.json``` file copy the abi of the contract.
-   - Now paste this abi as the value of ```contractAddress``` in ```scripts/feepay.js```.
-   - Copy the contract address of ```Fee_payment_NFT.sol``` and paste it as the value of  ```contractABI``` in ```scripts/feepay.js```.
+2. **Setting up the PINATA API keys and PINATA Gateway**
+   - Create a ```.env``` file in the project directory using the command ```touch .env```.
+   - Now open the ```.env``` file and fill the file with
+    ```
+     PINATA_API_KEY=<Your API Key>
+     PINATA_SECRET_API_KEY=<Your Secret API Key>
+     ```
+   - Open **Gateways** Section in **Developer** Section in **PINATA**.
+   - Copy the gateway domain from here.
+   - 
   
     
 
