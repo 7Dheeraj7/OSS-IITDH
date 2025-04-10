@@ -125,7 +125,7 @@ This is a decentralized application (DApp) built with NFT's that allows students
      ```
    - Open **Gateways** Section in **Developer** Section in **PINATA**.
    - Copy the gateway domain from here.
-   - 
+   - Open ```server.js``` file and you will find a variable named ```ipfsURL``` at 3 instances in the file and paste this gateway at the placeholder in its value ```https://<your-gateway>/ipfs/${response.data.IpfsHash}```.
   
     
 
