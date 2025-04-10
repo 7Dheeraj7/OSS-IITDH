@@ -70,7 +70,7 @@ This is a decentralized application (DApp) built with NFT's that allows students
 
 2. **Installing and Initialising truffle**  
    -  Make sure you have Node.js v22.14.0 and npm v10.9.2 installed. Then run:
-      ```npm install -g truffle ```( **Ignore the warnings** )
+      ```sudo npm install -g truffle ```( **Ignore the warnings** )
    - Clone this git repo into the folder with ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git```
    - Now you will get a folder with name OSS-IITDH in this folder.
    - Now run the following commands
