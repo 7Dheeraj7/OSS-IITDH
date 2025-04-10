@@ -32,6 +32,35 @@ This is a decentralized application (DApp) built with NFT's that allows students
 ---
 ## 🚀 Installation and Quick Start Guide
 
+- **For testing on local network**
+- **Step 1: Install & Set Up MetaMask and Ganache Local BlockChain Network**
+
+1. **Install MetaMask**  
+   - Download and install the MetaMask browser extension from [https://metamask.io](https://metamask.io).
+   - Download and install Ganache.
+
+2. **Create or Import Wallet**  
+   - Click **"Get Started"**.
+   - Choose **"Import Wallet"** if you already have a wallet, or **"Create a Wallet"** to generate a new one.
+   - If creating a new one, be sure to **safely store your recovery phrase**.
+
+3. **Connect Ganache Account**  
+   - Launch **Ganache** and copy one of the account **private keys**.
+   - In MetaMask, go to your profile icon → **"Import Account"**.
+   - Paste the private key from Ganache and click **Import**.
+   - Import multiple accounts from the ganache in the same manner(will be useful when testing the DAPP). 
+   - You should now see the Ganache account in MetaMask.
+
+4. **Add Ganache Local Blockchain Network**  
+   - In MetaMask, go to **Settings → Networks → Add a network manually**.
+   - Use the following values:
+     ```
+     Network Name: Ganache
+     New RPC URL: http://127.0.0.1:7545
+     Chain ID: 1337
+     Currency Symbol: ETH
+     ```
+   - Save and switch to the newly added **Ganache** network.
 
 
 ---
