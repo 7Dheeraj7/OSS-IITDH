@@ -133,27 +133,22 @@ This is a decentralized application (DApp) built with NFT's that allows students
 1. **Launching the Servers**
    - Run the command ```node server.js``` in the same folder in the terminal.
    - Run the command ```python3 -m http.server``` in the same folder in a different terminal.
-   - Now open a window ```http://localhost:8000/pages/admin.html```in firefox and ```http://localhost:8000/login.html``` in another window.
+   - Now open a window ```http://localhost:8000/pages/admin.html``` in firefox and ```http://localhost:8000/login.html``` in another window.
   
 2.**Using the DAPP**
-
-  - **ADMIN**
-    
+   - **ADMIN**
    - In metamask select the account that we deployed our NFT's.
    - Copy wallet address of a different account in metamask.
    - Now in the admin page we can generate Id_NFT's and certificate NFT's by filling the details and entering this user's wallet address.
    - The admin shares the token id and contract address of the user's NFT with the User.
-   - The User then can import these NFT's in their metamask wallets by entering their contract address and token ID.
-     
-  - **USER**
-
-    - In metamask now select the account that we want to login with into our OSS-IITDH portal.
-    - Now we can login to this portal with the token ID of their ID_NFT.
-    - Once we login we can use the token ID of the certificate NFT for verification of the certificates.
-    - We can use the remaining functionalities also securely once we log in to it.
-    - The Fee Payment will mint a NFT as the reciept and gives the token ID of it and also the transaction gets recorded in the ganache blockchain.
-    - The user can then import this reciept to his wallet by using its token ID and contract address.
-
+   - The User then can import these NFT's in their metamask wallets by entering their contract address and token ID. 
+   - **USER**
+   - In metamask now select the account that we want to login with into our OSS-IITDH portal.
+   - Now we can login to this portal with the token ID of their ID_NFT.
+   - Once we login we can use the token ID of the certificate NFT for verification of the certificates.
+   - We can use the remaining functionalities also securely once we log in to it.
+   - The Fee Payment will mint a NFT as the reciept and gives the token ID of it and also the transaction gets recorded in the ganache blockchain.
+   - The user can then import this reciept to his wallet by using its token ID and contract address.
 
 ---
 ## 📂 Project Structure
