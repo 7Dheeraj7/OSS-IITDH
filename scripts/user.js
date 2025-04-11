@@ -1,7 +1,7 @@
 
-//Contract address and ABI
-const CERT_contr_addr = ""Your Certificate_NFT Address""; 
-    const CERT_contr_ABI = ["Your Certificate_NFT ABI"];
+//Contract address and ABI 
+const CERT_contr_addr = "<Your Certificate_NFT Address>"; //It will be like "0xgeduhfeu8eyeih".
+    const CERT_contr_ABI = [<Your Certificate_NFT ABI>];//Will be in Certificate_NFT.json 3rd line abi:[{..}{..}{..}] you need to copy the part inside the square brackets
 
 
 
