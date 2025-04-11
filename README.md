@@ -68,11 +68,11 @@ This is a decentralized application (DApp) built with NFT's that allows students
 
 1. **Cloning the repo and starting to work**  
    - Clone this git repo with the commad ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git``` or unzip the zip file.
-   - Now you will get a folder with name OSS-IITDH.
-   - Now go this floder using ```cd OSS-IITDH```.
+   - Now you will get a folder with name OSS-IITDH if you have cloned or you will get OSS-IITDH-master if you had unzipped it.
+   - Now go this floder using ```cd OSS-IITDH or cd OSS-IITDH-master```.
 
 2. **Installing and Initialising truffle**
-   -  Now you are inside the folder OSS-IITDH/ 
+   -  Now you are inside the folder OSS-IITDH/ or OSS-IITDH-master. 
    -  Make sure you have Node.js v22.14.0 and npm v10.9.2 installed. Then run:
       ```sudo npm install -g truffle ```( **Ignore the warnings** )
    - Run the following command
@@ -177,11 +177,11 @@ This is a decentralized application (DApp) built with NFT's that allows students
 
 1. **Cloning the repo and starting to work**  
    -  Clone this git repo with the commad ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git``` or unzip the zip file.
-   - Now you will get a folder with name OSS-IITDH.
-   - Now go this floder using ```cd OSS-IITDH```.
+   - Now you will get a folder with name OSS-IITDH if you have cloned or you will get OSS-IITDH-master if you had unzipped it.
+   - Now go this floder using ```cd OSS-IITDH or cd OSS-IITDH-master```.
 
 2. **Installing and Initialising truffle**
-   -  Now you are inside the folder OSS-IITDH/ 
+   -  Now you are inside the folder OSS-IITDH/ or OSS-IITDH-master. 
    -  Make sure you have Node.js v22.14.0 and npm v10.9.2 installed. Then run:
       ```sudo npm install -g truffle ```( **Ignore the warnings** )
    - Run the following command
