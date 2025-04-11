@@ -124,7 +124,7 @@ This is a decentralized application (DApp) built with NFT's that allows students
      PINATA_API_KEY=<Your API Key>
      PINATA_SECRET_API_KEY=<Your Secret API Key>
      ```
-   - Open **Gateways** Section in **Developer** Section in **PINATA**.
+   - Open **Gateways**  Section in **PINATA**.
    - Copy the gateway domain from here.
    - Open ```server.js``` file and you will find a variable named ```gateway``` with value ```https://<your-gateway-domain>/ipfs/``` and replace the placeholder with your gateway domain.
    - Now that the setup is done we can go to the next step.
