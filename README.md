@@ -136,7 +136,7 @@ This is a decentralized application (DApp) built with NFT's that allows students
    - Run the command ```python3 -m http.server``` in the same folder in a different terminal.
    - Now open a window ```http://localhost:8000/pages/admin.html``` in firefox and ```http://localhost:8000/login.html``` in another window.
   
-2.**Using the DAPP**
+2. **Using the DAPP**
    -**You need to use the metamask extension carefully(Chainging the account to the one we are trying to use.)**
    - **ADMIN**
    - In metamask select the account that we deployed our NFT's.
