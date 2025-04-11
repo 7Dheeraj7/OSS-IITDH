@@ -1,7 +1,7 @@
 
 //Contract address and ABI
-const contractAddress = ""Your Fee_payment_NFT Address"";
-const contractABI = ["Your Fee_payment_NFT ABI"];
+const contractAddress = "<Your Fee_payment_NFT Address>"; //It will be like "0xgeduhfeu8eyeih".
+const contractABI = [<Your Fee_payment_NFT ABI>]; //Will be in Fee_payment_NFT.json 3rd line abi:[{..}{..}{..}] you need to copy the part inside the square brackets
 // When the form with ID feeForm is submitted, this async function runs. It prevents the default behavior (e.preventDefault()) .
 document.getElementById('feeForm').addEventListener('submit', async (e) => {
     e.preventDefault();
