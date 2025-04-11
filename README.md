@@ -277,7 +277,20 @@ This is a decentralized application (DApp) built with NFT's that allows students
 
 
 
+## Acknowledgments
 
- 
+
+* Special Thanks for our **CS426-Introduction to Blockchains** Course Instructor **Prof.Siba Narayan Swain** for giving this interesting problem statement and explaining the concepts so clearly which made working in this project were easy.
+* [Tutorial for creating a NFT](https://www.web3.university/tracks/build-your-first-nft/how-to-create-an-nft)
+* [Tutorial for creating a NFT DApp](https://www.web3.university/tracks/build-your-first-nft/building-a-full-stack-nft-dapp)
+* [Leveraging a novel NFT-enabled blockchain architecture for the authentication of IoT assets in smart cities](https://www.nature.com/articles/s41598-023-45212-1)
+* [Truffle Quick Start Guide](https://archive.trufflesuite.com/docs/truffle/quickstart/)
+
+
+## Authors
+- This project was made as a course project for our Course **Introduction to Blockchains**.
+ * B.Dheeraj Reddy - CS22BT009
+ * P.Tarun Sai - CS22BT042
+ * B.R.Akash - CS22BT011
 
 
