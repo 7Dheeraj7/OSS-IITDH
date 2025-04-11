@@ -103,8 +103,8 @@ This is a decentralized application (DApp) built with NFT's that allows students
    - Now paste this abi as the value of ```CERT_contr_ABI``` in ```scripts/user.js``` and value of ```CERT_contr_ABI ``` in ```scripts/admin.js```.
    - Copy the contract address of ```Certificate_NFT.sol``` and paste it as the value of  ```CERT_contr_addr``` in ```scripts/user.js``` and value of ```CERT_contr_addr ``` in ```scripts/admin.js```.
    - Open the ```build/contracts/Fee_payment_NFT.json``` file copy the abi of the contract.
-   - Now paste this abi as the value of ```contractAddress``` in ```scripts/feepay.js```.
-   - Copy the contract address of ```Fee_payment_NFT.sol``` and paste it as the value of  ```contractABI``` in ```scripts/feepay.js```.
+   - Now paste this abi as the value of ```contractABI``` in ```scripts/feepay.js```.
+   - Copy the contract address of ```Fee_payment_NFT.sol``` and paste it as the value of  ```contractAddress``` in ```scripts/feepay.js```.
   
 
 -  **Step 4: Setting up the PINATA IPFS database and linking it to the backend**
