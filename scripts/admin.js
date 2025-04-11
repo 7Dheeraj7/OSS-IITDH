@@ -2,10 +2,10 @@
 
 
 
-const ID_contr_addr = "Your ID_card_NFT Address";
+const ID_contr_addr = "<Your ID_card_NFT Address>"; //It will be like "0xgeduhfeu8eyeih".
 
 
-const ID_contr_ABI = ["Your ID_card_NFT_ABI"];;
+const ID_contr_ABI = [<Your ID_card_NFT_ABI>];//Will be in ID_card_NFT.json 3rd line abi:[{..}{..}{..}] you need to copy the part inside the square brackets 
 
 
 //Function to get signer and contract
@@ -100,8 +100,8 @@ async function mintForUser() {
 
 
 
-const CERT_contr_addr = "Your Certificate_NFT Address";
-const CERT_contr_ABI = ["Your Certificate_NFT ABI"];
+const CERT_contr_addr = "<Your Certificate_NFT Address>"; //It will be like "0xgeduhfeu8eyeih".
+const CERT_contr_ABI = [<Your Certificate_NFT ABI>]; //Will be in Certificate_NFT.json 3rd line abi:[{..}{..}{..}] you need to copy the part inside the square brackets
 
 // Mint function for minting the Certificate NFT
 async function mintCertificate() {
