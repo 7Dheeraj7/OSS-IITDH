@@ -67,7 +67,7 @@ This is a decentralized application (DApp) built with NFT's that allows students
 -  **Step 2: Install Truffle & Setting Up the project directory**
 
 1. **Cloning the repo and starting to work**  
-   - Clone this git repo into the folder with ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git```.
+   - Clone this git repo with the commad ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git``` or unzip the zip file.
    - Now you will get a folder with name OSS-IITDH.
    - Now go this floder using ```cd OSS-IITDH```.
 
@@ -176,7 +176,7 @@ This is a decentralized application (DApp) built with NFT's that allows students
 -  **Step 2: Install Truffle & Setting Up the project directory**
 
 1. **Cloning the repo and starting to work**  
-   - Clone this git repo into the folder with ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git```.
+   -  Clone this git repo with the commad ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git``` or unzip the zip file.
    - Now you will get a folder with name OSS-IITDH.
    - Now go this floder using ```cd OSS-IITDH```.
 
