@@ -1,10 +1,9 @@
 
 //Contract address and ABI
 
-const ID_contr_addr = "Your ID_card_NFT Address";
+const ID_contr_addr = "<Your ID_card_NFT Address>";//It will be like "0xgeduhfeu8eyeih".
 
-
-const ID_contr_ABI = ["Your ID_card_NFT ABI"];;
+const ID_contr_ABI = [<Your ID_card_NFT ABI>];;//Will be in ID_card_NFT.json 3rd line abi:[{..}{..}{..}] you need to copy the part inside the square brackets
 
 //Function to verify if the Token Id belongs to the respective wallet address.
     async function verifyIdentityNFT() {
