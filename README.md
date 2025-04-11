@@ -92,6 +92,8 @@ This is a decentralized application (DApp) built with NFT's that allows students
    - Configure the compiler verison to 0.8.19.
    - Now compile the contracts using ```truffle compile```
    - After compilation deploy the contracts using ```truffle deploy```
+   - You will see the deployment details being displayed on your terminal.
+   - Now the deployment is completed and Store the Contract Addresses with you.
 
 2. **Setting up the contract Addresses and ABI's**
    - After deploying we will get a folder named **build** in our project folder.
@@ -152,6 +154,82 @@ This is a decentralized application (DApp) built with NFT's that allows students
    - We can use the remaining functionalities such as (mess menu & feedack,work requests,fee payment,course registration,certificate verification) also securely once we log in to it.
    - The Fee Payment will mint a NFT as the reciept and gives the token ID of it and also the transaction gets recorded in the ganache blockchain network.
    - The user can then import this reciept to his wallet by going to NFT section and then clicking import NFT and using its token ID and contract address.
+
+
+
+
+- **For testing on Etherem Test network (Sepolia)**
+- **Step 1: Install & Set Up MetaMask and Test Network**
+
+1. **Install MetaMask**  
+   - Download and install the MetaMask browser extension from [https://metamask.io](https://metamask.io).
+     
+2. **Create or Import Wallet**  
+   - Click **"Get Started"**.
+   - Choose **"Import Wallet"** if you already have a wallet, or **"Create a Wallet"** to generate a new one.
+   - If creating a new one, be sure to **safely store your recovery phrase**.
+
+3. **Creating accounts on the test network**  
+   - Open MetaMask and at the left top you can see the network connected.
+   - Click on it and select a test network of your choice.
+   - Now click the accounts icon and add 3 to 4 accounts in it. 
+   - You should now see the theses accounts and conifrm they are connected to the test network in MetaMask.
+
+
+-  **Step 2: Install Truffle & Setting Up the project directory**
+
+1. **Create a folder with name of your choice**  
+   - ```mkdir <folder name>``` for ubuntu.
+   - Go inside the folder with ```cd <folder name>``` .
+
+2. **Installing and Initialising truffle**  
+   -  Make sure you have Node.js v22.14.0 and npm v10.9.2 installed. Then run:
+      ```sudo npm install -g truffle ```( **Ignore the warnings** )
+   - Clone this git repo into the folder with ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git```
+   - Now you will get a folder with name OSS-IITDH in this folder.
+   - Now run the following commands
+    ```
+    mv OSS-IITDH/* .
+    if contracts and migrations didn't move to the contracts and migrations folders (ls contracts/ is empty) in our project folder then:
+    {mv OSS-IITDH/contracts/* contracts/
+    mv OSS-IITDH/migrations/* migrations/}
+    rm -r OSS-IITDH
+    npm install
+     ```
+   - **npm install** installs the required packages.
+
+-  **Step 3: Contracts Compilation ,Deployment and setting up the Contracts in the js files**
+  
+1. **Contracts Compilation and Deployment**
+   - Open truffle_config.js file present in the folder.
+   - Configure the compiler verison to 0.8.19.
+   - Now run ```truffle dashboard``` in the terminal and you will see a window popup in your browser(make sure it is opened in the same browser as metamask).
+   - In that at the bottom-left you see a ```connect``` option,If you click on it,It will connect to the test network.
+   - **See the note below step 4 and step 5 and come back here.**
+   - Now compile and deploy the contracts  using ```truffle migrate --network dashboard```.
+   - After compilation you will get a request in the truffle dashboard to allow to deploy the NFT's in order.Approve the 3 requests.
+   - Make sure the three contracts are being deployed with the same wallet that is supposed to be your admin in metamssk.
+   - Now the deployment is completed and Store the Contract Addresses with you.
+
+2. **Setting up the contract Addresses and ABI's**
+   - After deploying we will get a folder named **build** in our project folder.
+   - Open the ```build/contracts/Id_card_NFT.json``` file copy the abi of the contract.
+   - Now paste this abi as the value of ```Id_contr_ABI``` in ```login.js``` and value of ```Id_contr_ABI ``` in ```scripts/admin.js```.
+   - After deploying we will get the details of deployment on our terminal.
+   - Copy the contract address of ```Id_card_NFT.sol``` and paste it as the value of  ```Id_contr_addr``` in ```login.js``` and value of ```Id_contr_addr ``` in ```scripts/admin.js```.
+   - Open the ```build/contracts/Certificate_NFT.json``` file copy the abi of the contract.
+   - Now paste this abi as the value of ```CERT_contr_ABI``` in ```scripts/user.js``` and value of ```CERT_contr_ABI ``` in ```scripts/admin.js```.
+   - Copy the contract address of ```Certificate_NFT.sol``` and paste it as the value of  ```CERT_contr_addr``` in ```scripts/user.js``` and value of ```CERT_contr_addr ``` in ```scripts/admin.js```.
+   - Open the ```build/contracts/Fee_payment_NFT.json``` file copy the abi of the contract.
+   - Now paste this abi as the value of ```contractABI``` in ```scripts/feepay.js```.
+   - Copy the contract address of ```Fee_payment_NFT.sol``` and paste it as the value of  ```contractAddress``` in ```scripts/feepay.js```.
+  
+
+-  **Step 4 and Step 5 are the same as using the local block-chain server**
+- **Note**
+- To use the test network and to deploy and interact with these NFT's you need to first have some testnet ethers in your wallets.
+- To get these tokens you can go to the respctive testnet faucets like [Sepolia Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)(for sepolia test net).
+- You can add these tokens/ethers to your admin and user's wallets and start deploying.
 
 ---
 ## 📂 Project Structure
