@@ -45,11 +45,11 @@ This is a decentralized application (DApp) built with NFT's that allows students
    - If creating a new one, be sure to **safely store your recovery phrase**.
 
 3. **Connect Ganache Account**  
-   - Launch **Ganache** and copy one of the account **private keys**.
+   - Launch **Ganache** and copy the first acoounts' **private key**.
    - In MetaMask, go to your profile icon → **"Add account or Hardware Wallet"**.
-   - Paste the private key from Ganache and click **Private Key/Import Account**.
-   - (You can do it later) Import multiple accounts from the ganache in the same manner(will be useful when testing the DAPP). 
-   - You should now see the Ganache account in MetaMask.
+   - Click **Private Key/Import Account** and Paste the private key from Ganache.
+   - Import multiple accounts different from the one before from ganache in the same manner(will be useful when testing the DAPP). 
+   - You should now see the Ganache accounts in MetaMask.
 
 4. **Add Ganache Local Blockchain Network**  
    - In MetaMask, go to **Networks(at left-top,Ethereum mainnet will be as default) → Add a network manually**.
@@ -137,19 +137,20 @@ This is a decentralized application (DApp) built with NFT's that allows students
    - Now open a window ```http://localhost:8000/pages/admin.html``` in firefox and ```http://localhost:8000/login.html``` in another window.
   
 2.**Using the DAPP**
+   -**You need to use the metamask extension carefully(Chainging the account to the one we are trying to use.)**
    - **ADMIN**
    - In metamask select the account that we deployed our NFT's.
-   - Copy wallet address of a different account in metamask.
+   - Copy wallet address of a different account(these are our users) in metamask.
    - Now in the admin page we can generate Id_NFT's and certificate NFT's by filling the details and entering this user's wallet address.
    - The admin shares the token id and contract address of the user's NFT with the User.
    - The User then can import these NFT's in their metamask wallets by entering their contract address and token ID. 
    - **USER**
    - In metamask now select the account that we want to login with into our OSS-IITDH portal.
-   - Now we can login to this portal with the token ID of their ID_NFT.
+   - Now we can login to this portal with the token ID of the user's respective ID_NFT.
    - Once we login we can use the token ID of the certificate NFT for verification of the certificates.
-   - We can use the remaining functionalities also securely once we log in to it.
-   - The Fee Payment will mint a NFT as the reciept and gives the token ID of it and also the transaction gets recorded in the ganache blockchain.
-   - The user can then import this reciept to his wallet by using its token ID and contract address.
+   - We can use the remaining functionalities such as (mess menu & feedack,work requests,fee payment,course registration,certificate verification) also securely once we log in to it.
+   - The Fee Payment will mint a NFT as the reciept and gives the token ID of it and also the transaction gets recorded in the ganache blockchain network.
+   - The user can then import this reciept to his wallet by going to NFT section and then clicking import NFT and using its token ID and contract address.
 
 ---
 ## 📂 Project Structure
@@ -192,6 +193,7 @@ This is a decentralized application (DApp) built with NFT's that allows students
 │   └── some images to insert as logos/favicons
 ├── .env
 ├── package.json
+├── package-lock.json
 ```
 
 
