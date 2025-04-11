@@ -138,6 +138,7 @@ This is a decentralized application (DApp) built with NFT's that allows students
   
 2. **Using the DAPP**
    - **You need to use the metamask extension carefully(Chainging the account to the one we are trying to use.)**
+   -  **Everytime you change the metamask account check if it got connected to the network on your extensions->metamask before doing any function in the DAPP.**
    - **ADMIN**
    - In metamask select the account that we deployed our NFT's.
    - Copy wallet address of a different account(these are our users) in metamask.
