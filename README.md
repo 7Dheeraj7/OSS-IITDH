@@ -29,7 +29,9 @@ This is a decentralized application (DApp) built with NFT's that allows students
 - **Storage**: IPFS (via Pinata)
 - **Frontend**: HTML, JavaScript, CSS, node.js ,Express.js
 - **Wallet**:MetaMask
+  
 ---
+
 ## 🚀 Installation and Quick Start Guide
 
 - **For testing on local network**
@@ -64,22 +66,17 @@ This is a decentralized application (DApp) built with NFT's that allows students
   
 -  **Step 2: Install Truffle & Setting Up the project directory**
 
-1. **Create a folder with name of your choice**  
-   - ```mkdir <folder name>``` for ubuntu.
-   - Go inside the folder with ```cd <folder name>``` .
+1. **Cloning the repo and starting to work**  
+   - Clone this git repo into the folder with ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git```.
+   - Now you will get a folder with name OSS-IITDH.
+   - Now go this floder using ```cd OSS-IITDH```.
 
-2. **Installing and Initialising truffle**  
+2. **Installing and Initialising truffle**
+   -  Now you are inside the folder OSS-IITDH/ 
    -  Make sure you have Node.js v22.14.0 and npm v10.9.2 installed. Then run:
       ```sudo npm install -g truffle ```( **Ignore the warnings** )
-   - Clone this git repo into the folder with ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git```
-   - Now you will get a folder with name OSS-IITDH in this folder.
-   - Now run the following commands
+   - Run the following command
     ```
-    mv OSS-IITDH/* .
-    if contracts and migrations didn't move to the contracts and migrations folders (ls contracts/ is empty) in our project folder then:
-    {mv OSS-IITDH/contracts/* contracts/
-    mv OSS-IITDH/migrations/* migrations/}
-    rm -r OSS-IITDH
     npm install
      ```
    - **npm install** installs the required packages.
@@ -178,32 +175,28 @@ This is a decentralized application (DApp) built with NFT's that allows students
 
 -  **Step 2: Install Truffle & Setting Up the project directory**
 
-1. **Create a folder with name of your choice**  
-   - ```mkdir <folder name>``` for ubuntu.
-   - Go inside the folder with ```cd <folder name>``` .
+1. **Cloning the repo and starting to work**  
+   - Clone this git repo into the folder with ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git```.
+   - Now you will get a folder with name OSS-IITDH.
+   - Now go this floder using ```cd OSS-IITDH```.
 
-2. **Installing and Initialising truffle**  
+2. **Installing and Initialising truffle**
+   -  Now you are inside the folder OSS-IITDH/ 
    -  Make sure you have Node.js v22.14.0 and npm v10.9.2 installed. Then run:
       ```sudo npm install -g truffle ```( **Ignore the warnings** )
-   - Clone this git repo into the folder with ```git clone https://github.com/7Dheeraj7/OSS-IITDH.git```
-   - Now you will get a folder with name OSS-IITDH in this folder.
-   - Now run the following commands
+   - Run the following command
     ```
-    mv OSS-IITDH/* .
-    if contracts and migrations didn't move to the contracts and migrations folders (ls contracts/ is empty) in our project folder then:
-    {mv OSS-IITDH/contracts/* contracts/
-    mv OSS-IITDH/migrations/* migrations/}
-    rm -r OSS-IITDH
     npm install
      ```
    - **npm install** installs the required packages.
+     
 
 -  **Step 3: Contracts Compilation ,Deployment and setting up the Contracts in the js files**
   
 1. **Contracts Compilation and Deployment**
    - Open truffle_config.js file present in the folder.
    - Configure the compiler verison to 0.8.19.
-   - Now run ```truffle dashboard``` in the terminal and you will see a window popup in your browser(make sure it is opened in the same browser as metamask).
+   - Now run ```truffle dashboard``` in the same folder in a new terminal window and you will see a window popup in your browser(make sure it is opened in the same browser as metamask).
    - In that at the bottom-left you see a ```connect``` option,If you click on it,It will connect to the test network.
    - **See the note below step 4 and step 5 and come back here.**
    - Now compile and deploy the contracts  using ```truffle migrate --network dashboard```.
